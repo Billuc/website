@@ -2,18 +2,20 @@
 	export let title: string;
 	export let dates: string;
 	export let description: string;
+	export let color: string;
 </script>
 
 <div class="resume-element-text">
-	<div class="title">{title}</div>
+	<div class={color + "-text title"}>{title}</div>
 	<div class="dates">{dates}</div>
 	<div class="description">{description}</div>
+	<slot />
 </div>
 
 <style>
-    .resume-element-text {
-        padding: 0.5rem 0;
-    }
+	.resume-element-text {
+		padding: 0.5rem 0;
+	}
 
 	.title {
 		font-size: 1.5rem;

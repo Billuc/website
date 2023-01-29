@@ -1,11 +1,23 @@
 .primary {
-    background-color: var(--primary);
+	background-color: var(--primary);
 }
 
 .secondary {
-    background-color: var(--secondary);
+	background-color: var(--secondary);
 }
 
 .tertiary {
-    background-color: var(--tertiary);
+	background-color: var(--tertiary);
+}
+
+.primary-text {
+	color: var(--primary);
+}
+
+.secondary-text {
+	color: var(--secondary);
+}
+
+.tertiary-text {
+	color: var(--tertiary);
 }

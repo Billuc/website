@@ -12,13 +12,17 @@
 <div class="resume-element">
 	<div class="text align-right">
 		{#if onLeft}
-			<ResumeElementText {title} {dates} {description} />
+			<ResumeElementText {title} {dates} {description} {color}>
+				<slot />
+			</ResumeElementText>
 		{/if}
 	</div>
 	<div class={color + ' vertical-color-line'} />
 	<div class="text">
 		{#if !onLeft}
-			<ResumeElementText {title} {dates} {description} />
+			<ResumeElementText {title} {dates} {description} {color}>
+				<slot />
+			</ResumeElementText>
 		{/if}
 	</div>
 </div>

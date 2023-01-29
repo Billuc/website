@@ -20,7 +20,7 @@
 	}
 
 	img {
-		width: min(75vw, 250px);
+		width: min(75vw, 300px);
 		height: auto;
 		border-radius: 50%;
 	}
