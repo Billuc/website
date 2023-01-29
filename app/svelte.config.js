@@ -10,7 +10,7 @@ const config = {
 	kit: {
 		adapter: adapter({
 			assets: 'build/website', // Because we deploy to /website
-			pages: 'build/website'
+			pages: 'build'
 		})
 	}
 };
