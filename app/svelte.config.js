@@ -8,7 +8,10 @@ const config = {
 	preprocess: vitePreprocess(),
 
 	kit: {
-		adapter: adapter()
+		adapter: adapter({
+			assets: 'build/website', // Because we deploy to /website
+			pages: 'build/website'
+		})
 	}
 };
 
