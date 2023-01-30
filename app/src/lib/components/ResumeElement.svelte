@@ -10,7 +10,7 @@
 </script>
 
 <div class="resume-element">
-	<div class="text align-right">
+	<div class="text align-right" class:empty={!onLeft}>
 		{#if onLeft}
 			<ResumeElementText {title} {dates} {description} {color}>
 				<slot />
@@ -18,7 +18,7 @@
 		{/if}
 	</div>
 	<div class={color + ' vertical-color-line'} />
-	<div class="text">
+	<div class="text" class:empty={onLeft}>
 		{#if !onLeft}
 			<ResumeElementText {title} {dates} {description} {color}>
 				<slot />
@@ -48,5 +48,11 @@
 
 	.align-right {
 		text-align: end;
+	}
+
+	@media screen and (max-width: 960px) {
+		.resume-element .text.empty {
+			flex: 0 0 0%;
+		}
 	}
 </style>

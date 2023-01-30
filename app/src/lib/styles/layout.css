@@ -3,6 +3,7 @@
 	--secondary: #ffe400;
 	--tertiary: #14a76c;
 	--text: #ebfeff;
+	--second-text: #e9e3e6;
 	--background: #272727;
 	--second-background: #747474;
 
@@ -52,8 +53,8 @@ body {
 }
 
 .container {
-	padding-top: 2rem;
-	padding-bottom: 2rem;
+	/* padding-top: 2rem; */
+	/* padding-bottom: 2rem; */
 	padding-left: var(--nav-drawer-width);
 	width: 90%;
 	margin: auto;
@@ -66,6 +67,6 @@ body {
 
 	html,
 	body {
-		font-size: 14px;
+		font-size: 16px;
 	}
 }
