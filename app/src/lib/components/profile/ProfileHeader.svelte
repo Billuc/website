@@ -5,20 +5,22 @@
 	export let fullHeight: boolean = false;
 </script>
 
-<div class="profile-header" style={fullHeight ? 'height: 100vh' : ''}>
+<div id="profile-header" class:full-height={fullHeight}>
 	<img alt="" src={image} />
 	<div class="name">{name}</div>
 	<div class="description">{description}</div>
 </div>
 
 <style>
-	.profile-header {
+	#profile-header {
 		display: flex;
 		flex-flow: column nowrap;
 		justify-content: center;
 		align-items: center;
 
 		margin: 0 auto 1rem;
+
+		text-align: center;
 	}
 
 	img {
@@ -36,5 +38,6 @@
 	.description {
 		font-size: 2rem;
 		margin: 0.5rem 0;
+		color: var(--second-text);
 	}
 </style>

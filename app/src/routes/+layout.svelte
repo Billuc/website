@@ -1,13 +1,19 @@
 <script>
 	import '$lib/styles/global.css';
-	import '$lib/styles/layout.css';
+
+	import NavigationDrawer from '$lib/components/layout/NavigationDrawer.svelte';
 </script>
 
-<div class="navigation-drawer">
-	<div class="title">Luc Billaud</div>
-	<div class="border" />
-</div>
+<NavigationDrawer />
 
 <div class="container">
 	<slot />
 </div>
+
+<style>
+	.container {
+		padding-left: var(--nav-drawer-width);
+		width: 80%;
+		margin: auto;
+	}
+</style>

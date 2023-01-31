@@ -1,17 +1,17 @@
 <script lang="ts">
-	import ResumeElement from '$lib/components/ResumeElement.svelte';
+	import ResumeElement from '$lib/components/resume/ResumeElement.svelte';
 
 	export let fullHeight: boolean = false;
 </script>
 
-<div class="resume" style={fullHeight ? 'height: 100vh' : ''}>
-	<div class="resume-title tertiary-text">My experiences</div>
+<div id="resume" class:full-height={fullHeight}>
+	<div class="resume-title blue-text">My experiences</div>
 
 	<ResumeElement
 		title="Software Engineer at Dative"
 		dates="2021-2023"
 		description="Fullstack developper (C# and Vue.JS)"
-		color="primary"
+		color="red"
 	>
 		<div class="list-element">Developped features for a data acquisition application.</div>
 		<div class="list-element">Created extensions for a cloud data vizualisation platform</div>
@@ -23,7 +23,7 @@
 		title="End of studies internship"
 		dates="2021-2021"
 		description="VR reseach project in an IT laboratory"
-		color="secondary"
+		color="yellow"
 		onLeft
 	>
 		<div class="list-element">Created a protocol to dynamically stream compressed 3D meshes</div>
@@ -37,7 +37,7 @@
 		title="Master of Science in Computer Science and Engineering"
 		dates="2016-2021"
 		description="Institut National des Sciences Appliquées de Lyon"
-		color="tertiary"
+		color="green"
 	/>
 </div>
 

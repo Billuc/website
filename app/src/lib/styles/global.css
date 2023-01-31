@@ -1,23 +1,74 @@
-.primary {
-	background-color: var(--primary);
+:root {
+	--red: #ff652f;
+	--yellow: #ffe400;
+	--green: #14a76c;
+	--blue: #20cfff;
+	--text: #ebfeff;
+	--second-text: #e9e3e6;
+	--background: #272727;
+	--second-background: #747474;
+
+	--nav-drawer-width: 96px;
 }
 
-.secondary {
-	background-color: var(--secondary);
+html,
+body {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+
+	font-size: 20px;
+	font-family: 'Source Sans Pro', Helvetica, sans-serif;
+
+	background: var(--background);
+	background: linear-gradient(var(--second-background) 0%, var(--background) 100%);
+	color: var(--text);
 }
 
-.tertiary {
-	background-color: var(--tertiary);
+@media screen and (max-width: 960px) {
+	:root {
+		--nav-drawer-width: 64px;
+	}
+
+	html,
+	body {
+		font-size: 16px;
+	}
 }
 
-.primary-text {
-	color: var(--primary);
+.full-height {
+	min-height: 100vh;
 }
 
-.secondary-text {
-	color: var(--secondary);
+.red {
+	background-color: var(--red);
 }
 
-.tertiary-text {
-	color: var(--tertiary);
+.yellow {
+	background-color: var(--yellow);
 }
+
+.green {
+	background-color: var(--green);
+}
+
+.blue {
+	background-color: var(--blue);
+}
+
+.red-text {
+	color: var(--red);
+}
+
+.yellow-text {
+	color: var(--yellow);
+}
+
+.green-text {
+	color: var(--green);
+}
+
+.blue-text {
+	color: var(--blue);
+}
+
