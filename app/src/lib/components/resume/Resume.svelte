@@ -1,5 +1,6 @@
 <script lang="ts">
 	import ResumeElement from '$lib/components/resume/ResumeElement.svelte';
+	import resume from '$lib/assets/CV_Luc_Billaud.pdf';
 
 	export let fullHeight: boolean = false;
 </script>
@@ -39,6 +40,8 @@
 		description="Institut National des Sciences Appliquées de Lyon"
 		color="green"
 	/>
+
+	<a href={resume} download>Download my resume</a>
 </div>
 
 <style>
@@ -50,11 +53,11 @@
 
 	.list-element {
 		padding: 0 1.5rem;
-        margin-top: 0.5rem;
-        color: var(--second-text);
+		margin-top: 0.5rem;
+		color: var(--second-text);
 	}
 
-    .list-element ~ .list-element {
-        margin-top: 0.25rem;
-    }
+	.list-element ~ .list-element {
+		margin-top: 0.25rem;
+	}
 </style>

@@ -6,7 +6,7 @@
 	--text: #ebfeff;
 	--second-text: #e9e3e6;
 	--background: #272727;
-	--second-background: #747474;
+	--second-background: #8a8a8a;
 
 	--nav-drawer-width: 96px;
 }
@@ -21,7 +21,7 @@ body {
 	font-family: 'Source Sans Pro', Helvetica, sans-serif;
 
 	background: var(--background);
-	background: linear-gradient(var(--second-background) 0%, var(--background) 100%);
+	background: linear-gradient(190deg, var(--second-background) -10%, var(--background) 90%);
 	color: var(--text);
 }
 
